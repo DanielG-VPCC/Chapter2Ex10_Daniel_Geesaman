@@ -17,12 +17,19 @@ Requirements:
 
 #include <iostream>
 using namespace std;
-const double milesDriven = 375;
-const double gasUsed = 15;
+//const double milesDriven = 375;
+//const double gasUsed = 15;
 
 
 int main()
 {
+    double milesDriven;
+    double gasUsed;
+    cout << "Please enter the miles you drove:" << endl;
+    cin >> milesDriven;
+    cout << "Please enter the amount of gas used:" << endl;
+    cin >> gasUsed;
     double milesPerGallon = milesDriven / gasUsed;
-    cout << "Your car gets " << milesPerGallon << " miles per gallon.";
+    cout << "Your car gets " << milesPerGallon << " miles per gallon." << endl;
+    return 0;
 }
